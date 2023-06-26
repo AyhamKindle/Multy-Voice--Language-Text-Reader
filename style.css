@@ -1,0 +1,124 @@
+*{
+    font-family: Calibri;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 255, 242);
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    font-size: 23px;
+    outline: none;
+    background: #009688;
+    color: #fff;
+    padding: 10px;
+   padding-left: 5px;
+   padding-right: 0;
+}
+#speechBtn{
+    position: relative;
+    padding: 13px 0;
+    font-size: 25px;
+    background: oldlace;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 500px;
+}
+#speechBtn:hover{
+    background: burlywood;
+}
+#voiceMenu{
+    position: relative;
+    /*width: 750px;*/
+    padding: 13px;
+    font-size: 20px;
+    border-right: 9px solid #fff;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+#textInput{
+    position: relative;
+    /*width: 500px;
+    height: 100px;*/
+    bottom: -40px;
+    left: 400px;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+    width: 400px;
+    padding-left: 45px;
+}
+.mic{
+    position: relative;
+    width: 40px;
+    height: 73.8px;
+    padding: 20px;
+    background: transparent;
+    z-index: 100;
+    font-size: 25px;
+    border: 0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 34px;
+    left: 400px;
+}
+#speechBtn:visited{
+    color: turquoise;
+}
+@media(max-width: 1200px) and (max-height:750px) {
+    .wrapper{
+width: 490px;
+height: 60px;
+font-size: 18px;
+font-weight: bold;
+padding-left: 2px;
+margin-left: -4px;
+    }
+    #speechBtn{
+        width: 90px;
+        height: 40px;
+        margin-left: -30px;
+        font-size: 18px;
+        padding-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.5px solid #000;
+    }
+    #voiceMenu{
+        width: 223px;
+        height: 50px;
+       margin-left: 10px;
+    }
+    #textInput{
+        left: 160px;
+        padding: 5px;
+        width: 230px;
+        height: 50px;
+        padding-left: 41px;
+    }
+    .wrapper span{
+        position: relative;
+        font-size: 20px;
+        outline: none;
+        left: -10px;
+    }
+    .mic{
+        height: 63px;
+        width: 23px;
+        bottom: 23px;
+        left: 160px;
+    }
+}
